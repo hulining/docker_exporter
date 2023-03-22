@@ -18,5 +18,5 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o docker_exporter -ldflags "
 
 FROM alpine:3.15
 WORKDIR /app
-COPY --from=builder /root/myapp/harbor_exporter harbor_exporter
-ENTRYPOINT ["/app/harbor_exporter"]
+COPY --from=builder /root/myapp/docker_exporter docker_exporter
+ENTRYPOINT ["/app/docker_exporter"]
