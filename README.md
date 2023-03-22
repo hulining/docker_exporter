@@ -11,7 +11,7 @@ docker run -d \
   --restart always \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   -p 9417:9417 \
-  hulining/dokcer_exporter:${version}
+  hulining/dockcer_exporter:${version}
 ```
 
 ## Reference
