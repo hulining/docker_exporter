@@ -16,6 +16,7 @@ const (
 	namespace              = "docker"
 	exporter               = "exporter"
 	container_subnamespace = "container"
+	image_subnamespace     = "image"
 )
 
 var DurationBuckets = []float64{.005, .01, .05, .1, .5, 1, 5}

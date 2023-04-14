@@ -6,12 +6,13 @@ Exports metrics about a Docker installation. Using golang and reference https://
 ## Usage
 
 ```
+version=v0.1
 docker run -d \
    --name docker_exporter \
   --restart always \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   -p 9417:9417 \
-  hulining/dockcer_exporter:${version}
+  hulining/docker_exporter:${version}
 ```
 
 ## Reference

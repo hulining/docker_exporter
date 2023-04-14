@@ -11,6 +11,7 @@ var (
 	Scrapers = map[Scraper]bool{
 		&InfoScraper{}:      true,
 		&ContainerScraper{}: true,
+		&ImageScraper{}:     true,
 	}
 )
 
